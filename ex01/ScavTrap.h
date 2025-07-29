@@ -5,9 +5,11 @@
 class ScavTrap : public ClapTrap {
     public:
         ScavTrap();
+        explicit ScavTrap(const std::string name);
         ScavTrap(const ScavTrap& scavtrap);
         ScavTrap &operator=(const ScavTrap& scavtrap);
         ~ScavTrap();
+        void attack(const std::string& target);
         void guardGate();
     private:
         static const int kDefaultHitPoints = 100;

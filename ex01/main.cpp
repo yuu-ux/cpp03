@@ -1,15 +1,18 @@
-#include "ClapTrap.h"
+#include "ScavTrap.h"
 
 int main() {
-    ClapTrap a;
-    ClapTrap b(a);
-    ClapTrap c;
+    ScavTrap a;
+    ScavTrap b(a);
+    ScavTrap c;
 
     c = a;
 
-    c.attack("jon");
+    c.setName("hoge");
+    c.attack("fuga");
     c.takeDamage(5);
     c.beRepaired(3);
+    c.guardGate();
 
     return 0;
 }
+
