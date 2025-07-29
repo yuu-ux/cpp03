@@ -7,7 +7,8 @@ int main() {
 
     c = a;
 
-    c.attack("jon");
+    c.setName("hoge");
+    c.attack("fuga");
     c.takeDamage(5);
     c.beRepaired(3);
 
