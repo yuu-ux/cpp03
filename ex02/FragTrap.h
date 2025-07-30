@@ -11,7 +11,6 @@ class FragTrap : public ClapTrap {
         FragTrap &operator=(const FragTrap& fragtrap);
         ~FragTrap();
         void highFivesGuys(void);
-    private:
         static const int kDefaultHitPoints = 100;
         static const int kDefaultEnergyPoints = 100;
         static const int kDefaultAttackDamage = 30;

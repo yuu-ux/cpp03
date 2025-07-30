@@ -11,10 +11,10 @@ class ScavTrap : public ClapTrap {
         ~ScavTrap();
         void attack(const std::string& target);
         void guardGate();
-    private:
-        static const int kDefaultHitPoints = 100;
-        static const int kDefaultEnergyPoints = 50;
-        static const int kDefaultAttackDamage = 20;
+		static const int kDefaultHitPoints = 100;
+		static const int kDefaultEnergyPoints = 50;
+		static const int kDefaultAttackDamage = 20;
 };
 
 #endif
+
