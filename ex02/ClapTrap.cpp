@@ -60,7 +60,6 @@ void ClapTrap::takeDamage(unsigned int amount) {
     hit_points_ = 0;
   }
   std::cout << "ClapTrap " << name_ << " takes " << amount << " points of damage! " << "(hit_points: " << hit_points_ << ")" << std::endl;
-  ;
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
