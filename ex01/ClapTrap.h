@@ -10,9 +10,9 @@ class ClapTrap {
   explicit ClapTrap(const std::string& name, int hit_points = kDefaultHitPoints, int energy_points = kDefaultEnergyPoints, int attack_damage = kAttackDamage);
   ClapTrap& operator=(const ClapTrap& claptrap);
   ~ClapTrap();
-  void attack(const std::string& target);
-  void takeDamage(unsigned int amount);
-  void beRepaired(unsigned int amount);
+  virtual void attack(const std::string& target);
+  virtual void takeDamage(unsigned int amount);
+  virtual void beRepaired(unsigned int amount);
 
   // getter
   std::string getName() const;
