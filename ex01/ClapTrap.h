@@ -30,7 +30,7 @@ class ClapTrap {
   static const int kDefaultEnergyPoints = 10;
   static const int kAttackDamage = 0;
 
- private:
+ protected:
   std::string name_;
   int hit_points_;
   int energy_points_;

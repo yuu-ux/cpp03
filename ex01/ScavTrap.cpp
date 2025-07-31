@@ -27,16 +27,13 @@ ScavTrap::~ScavTrap() {
 }
 
 void ScavTrap::attack(const std::string& target) {
-  int energy_points = this->getEnergyPoints();
-  int hit_points = this->getHitPoints();
-  std::string name = this->getName();
-  if (energy_points && hit_points) {
-    setEnergyPoints(--energy_points);
-    std::cout << "ScavTrap " << name << " attacks " << target
+  if (energy_points_ && hit_points_) {
+    --energy_points_;
+    std::cout << "ScavTrap " << name_ << " attacks " << target
               << ", causing " << this->getAttackDamage() << " points of damage! "
-              << "(energy left: " << energy_points << ")" << std::endl;
+              << "(energy left: " << energy_points_ << ")" << std::endl;
   } else {
-    std::cout << "ScavTrap " << name << " is too weak to attack!" << std::endl;
+    std::cout << "ScavTrap " << name_ << " is too weak to attack!" << std::endl;
   }
 }
 
